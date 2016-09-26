@@ -5,7 +5,7 @@ angular.module('TIYCocoAngularApp', [])
             console.log("About to go get me some data!");
             $scope.name = "JavaScript Master Guru";
 
-            $http.get("http://localhost:8080/coco.json?smalls=" + numSmalls + "&bigs=" + numBigs + "&goal=" + goalNum)
+            $http.get("/coco.json?smalls=" + numSmalls + "&bigs=" + numBigs + "&goal=" + goalNum)
                 .then(
                     function successCallback(response) {
                         console.log(response.data);

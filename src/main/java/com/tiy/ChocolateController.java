@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 public class ChocolateController {
 
 
-    @RequestMapping(path = "/coco", method = RequestMethod.GET)
+    @RequestMapping(path = "/", method = RequestMethod.GET)
     public String cocoLogin(HttpSession session, Model model) throws Exception {
         return "coco";
     }
